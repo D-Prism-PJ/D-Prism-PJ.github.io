@@ -138,71 +138,88 @@
   </section>
 
   <section class="hero teaser">
-    <div class="container is-max-desktop">
+    <div class="container" style="max-width: 1400px;">
       <div class="hero-body">
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/teaser.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-centered" style="margin-bottom: 1.5rem;">
           <span class="dnerf">D-Prism</span> is a novel framework based on structured primitives for dynamic geometry
           reconstruction using monocular inputs.
         </h2>
-      </div>
-    </div>
-  </section>
 
+        <!-- Comparison Grid -->
+        <div class="teaser-comparison">
+          <!-- Column Headers -->
+          <div class="columns is-mobile is-gapless has-text-centered" style="margin-bottom: 0.3rem;">
+            <div class="column" style="flex: 1;"><strong>GT</strong></div>
+            <div class="column" style="flex: 1;"><strong>DG-Mesh (Mesh)</strong></div>
+            <div class="column" style="flex: 1;"><strong>DG-Mesh (Render)</strong></div>
+            <div class="column" style="flex: 1;"><strong>Ours (Primitives)</strong></div>
+            <div class="column" style="flex: 1;"><strong>Ours (Render)</strong></div>
+          </div>
 
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/steve.mp4" type="video/mp4">
-            </video>
+          <!-- Row 1: box -->
+          <div class="columns is-mobile is-gapless" style="margin-bottom: 0.5rem;">
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/gt/box.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/dgmesh/box/move_mesh.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/dgmesh/box/move_mesh_img.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/ours/box/move_primitive_img.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/ours/box/move_gs_img.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/chair-tp.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/shiba.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/fullbody.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-blueshirt">
-            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/blueshirt.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-mask">
-            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/mask.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-coffee">
-            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/coffee.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-toby">
-            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/toby2.mp4" type="video/mp4">
-            </video>
+
+          <!-- Row 2: cube -->
+          <div class="columns is-mobile is-gapless" style="margin-bottom: 0.5rem;">
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/gt/cube.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/dgmesh/cube/move_mesh.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/dgmesh/cube/move_mesh_img.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/ours/cube/move_primitive_img.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column" style="flex: 1; padding: 2px;">
+              <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                <source src="./static/videos/start_compare/ours/cube/move_gs_img.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-
-  <section class="section">
+  <section class="section" style="padding-top: 1.5rem;">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -226,6 +243,57 @@
         </div>
       </div>
       <!--/ Abstract. -->
+
+      <!-- Pipeline. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Pipeline</h2>
+          <div class="content">
+            <img src="./static/images/framework2_white.png" alt="D-Prism Pipeline Overview"
+              style="width: 100%; max-width: 1200px;" />
+            <p class="has-text-justified" style="margin-top: 1rem;">
+              <b>Overview of D-Prism.</b> Starting from randomly initialized primitives with learnable shape, scale,
+              opacity, and motion parameters, we use a backward network to map primitives to a canonical space and a
+              forward network to deform them to each timestep. A novel <i>Primitive Adaptive Control</i> strategy
+              dynamically adjusts primitive counts via merge, clone, and prune operations. 3D Gaussians are bound to
+              primitive surfaces for high-quality rasterization, supervised by RGB and mask losses.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Pipeline. -->
+
+      <!-- Results. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Quantitative Results</h2>
+
+          <!-- Motion Tracking Results -->
+          <div class="content" style="margin-bottom: 2rem;">
+            <h3 class="title is-4">Structured Motion Tracking Results on Dynamic Primitive Dataset</h3>
+            <img src="./static/images/motion_tracking_res.png" alt="Motion Tracking"
+              style="width: 100%; max-width: 900px;" />
+            <p class="has-text-justified" style="margin-top: 0.75rem;">
+              <b>3D motion tracking results.</b> We evaluate motion tracking accuracy using End-Point-Error (EPE) and
+              accuracy thresholds (δ<sub>3D</sub>) across six object categories. Our method demonstrates superior
+              or highly competitive performance compared to Shape of Motion, Ub4D, MovingParts, SP-GS, and DG-Mesh.
+            </p>
+          </div>
+
+          <!-- Dynamic Reconstruction Results -->
+          <div class="content">
+            <h3 class="title is-4">Structured Dynamic Reconstruction Results on Dynamic Primitive Dataset</h3>
+            <img src="./static/images/dyn_recon_res.png" alt="Dynamic Reconstruction"
+              style="width: 100%; max-width: 900px;" />
+            <p class="has-text-justified" style="margin-top: 0.75rem;">
+              <b>Dynamic geometry reconstruction results.</b> We compare our method against Ub4D and DG-Mesh using
+              Chamfer Distance (CD<sub>d</sub>) and Earth Mover's Distance (EMD<sub>d</sub>) metrics across six
+              object categories. Our method achieves the best results on most scenes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Results. -->
 
       <!-- Paper video. -->
       <div class="columns is-centered has-text-centered">
